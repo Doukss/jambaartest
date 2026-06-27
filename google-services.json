@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1092190687593",
+    "project_id": "jambaartest-2d702",
+    "storage_bucket": "jambaartest-2d702.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092190687593:android:86b634bfd834940a346df8",
+        "android_client_info": {
+          "package_name": "com.malick221.jambaartest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOhs_qeqXPmyTKNOiEbzO-9wK10PvYPM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

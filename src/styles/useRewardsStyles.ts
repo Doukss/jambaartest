@@ -1,0 +1,135 @@
+import { useThemedStyles } from "@/src/theme/useTheme";
+import { useBottomTabBarHeight } from "../hooks/useTabBarHeight";
+
+export function useRewardsStyles() {
+  const tabBarHeight = useBottomTabBarHeight();
+
+  const styles = useThemedStyles((c) => ({
+    container: { flex: 1, backgroundColor: c.bg },
+    listContent: {
+      paddingHorizontal: 20,
+      paddingBottom: 16 + tabBarHeight,
+    },
+    topHalo: {
+      position: "absolute",
+      top: -60,
+      left: "50%",
+      marginLeft: -100,
+      width: 200,
+      height: 200,
+      borderRadius: 100,
+      backgroundColor: c.amber + "06",
+    },
+    navHeader: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      paddingTop: 8,
+      paddingBottom: 16,
+      paddingHorizontal: 20,
+    },
+    backBtn: {
+      width: 40,
+      height: 40,
+      borderRadius: 12,
+      backgroundColor: c.cardBg,
+      borderWidth: 1,
+      borderColor: c.cardBorder,
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    navTitle: {
+      color: c.white,
+      fontSize: 20,
+      fontWeight: "800",
+      letterSpacing: -0.5,
+    },
+    balanceCard: {
+      backgroundColor: c.cardBg,
+      borderRadius: 20,
+      borderWidth: 1,
+      borderColor: c.amber + "25",
+      padding: 18,
+      marginHorizontal: 20,
+      marginBottom: 20,
+      overflow: "hidden",
+      position: "relative",
+    },
+    balanceHalo: {
+      position: "absolute",
+      top: -30,
+      right: -30,
+      width: 100,
+      height: 100,
+      borderRadius: 50,
+      backgroundColor: c.amber + "08",
+    },
+    balanceTop: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 8,
+      marginBottom: 8,
+    },
+    balanceLabel: { color: c.textMuted, fontSize: 12, fontWeight: "600" },
+    balanceRow: { flexDirection: "row", alignItems: "baseline", gap: 6 },
+    balanceValue: {
+      color: c.amber,
+      fontSize: 36,
+      fontWeight: "900",
+      letterSpacing: -1.5,
+    },
+    balanceUnit: { color: c.textMuted, fontSize: 16, fontWeight: "700" },
+    tabRow: {
+      flexDirection: "row",
+      marginHorizontal: 20,
+      marginBottom: 20,
+      backgroundColor: c.cardBg,
+      borderRadius: 14,
+      borderWidth: 1,
+      borderColor: c.cardBorder,
+      padding: 4,
+    },
+    tab: {
+      flex: 1,
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: 8,
+      paddingVertical: 10,
+      borderRadius: 10,
+    },
+    tabActive: { backgroundColor: c.amber + "12" },
+    tabText: { color: c.textMuted, fontSize: 13, fontWeight: "600" },
+    tabTextActive: { color: c.white, fontWeight: "700" },
+    couponsContainer: { flex: 1 },
+    filterRow: {
+      flexDirection: "row",
+      gap: 8,
+      paddingHorizontal: 20,
+      marginBottom: 16,
+    },
+    filterPill: {
+      paddingVertical: 6,
+      paddingHorizontal: 14,
+      borderRadius: 20,
+      borderWidth: 1,
+      borderColor: c.cardBorder,
+      backgroundColor: c.cardBg,
+    },
+    filterActive: {
+      backgroundColor: c.amber + "12",
+      borderColor: c.amber + "35",
+    },
+    filterText: { color: c.textMuted, fontSize: 12, fontWeight: "600" },
+    filterTextActive: { color: c.white, fontWeight: "700" },
+    emptyState: {
+      alignItems: "center",
+      justifyContent: "center",
+      paddingTop: 60,
+      gap: 12,
+    },
+    emptyTitle: { color: c.textMuted, fontSize: 14, fontWeight: "600" },
+  }));
+
+  return { styles };
+}
