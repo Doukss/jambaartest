@@ -2,10 +2,11 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import * as Notifications from "expo-notifications";
 import * as Device from "expo-device";
 import { Platform } from "react-native";
-import { usersApi } from "@/src/api/users.api";
-import logger from "@/src/utils/logger.utils";
+
 import { useRouter } from "expo-router";
 import { useAlertStore } from "../store/alerts.store";
+import logger from "@/utils/logger.utils";
+import { usersApi } from "@/api/users.api";
 
 // ─── Config globale Expo Notifications ───────────────────────
 // À appeler une seule fois — idéalement dans app/_layout.tsx

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-import { useVerifyOtp, useResendOtp } from "@/src/hooks/useAuth";
 import { Animated } from "react-native";
+import { useResendOtp, useVerifyOtp } from "./useAuth";
 
 const OTP_LENGTH = 6;
 const RESEND_COOLDOWN = 120;

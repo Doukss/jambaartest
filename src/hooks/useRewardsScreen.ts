@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Alert } from "react-native";
 import * as Haptics from "expo-haptics";
-import { useAuthStore } from "@/src/store/auth.store";
-import { useJambaarProfile } from "@/src/hooks/useJambaar";
-import { useMyCoupons, useRedeemReward } from "@/src/hooks/useCoupons";
-import { useRewards } from "@/src/hooks/useRewards";
-import { useSmartBack } from "@/src/hooks/useSmartBack";
-import { isNetworkError } from "@/src/utils/error.utils";
+import { useRewards } from "./useRewards";
+import { useMyCoupons, useRedeemReward } from "./useCoupons";
+import { isNetworkError } from "@/utils/error.utils";
+import { useSmartBack } from "./useSmartBack";
+import { useAuthStore } from "@/store/auth.store";
+import { useJambaarProfile } from "./useJambaar";
+
 
 type TabType = "catalogue" | "coupons";
 type CouponFilter = "ACTIVE" | "USED" | "EXPIRED";

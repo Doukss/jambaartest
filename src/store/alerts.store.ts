@@ -1,5 +1,5 @@
+import { Alert } from "react-native";
 import { create } from "zustand";
-import { Alert } from "@/src/types/alert.types";
 
 // ─── Types pour les Modales & Alertes UI ────────────────────
 

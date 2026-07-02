@@ -1,8 +1,9 @@
 import { useState, useCallback } from "react";
 import * as Location from "expo-location";
-import { usersApi } from "@/src/api/users.api";
-import { useAuthStore } from "@/src/store/auth.store";
-import logger from "@/src/utils/logger.utils";
+import { useAuthStore } from "@/store/auth.store";
+import logger from "@/utils/logger.utils";
+import { usersApi } from "@/api/users.api";
+
 
 interface LocationState {
   granted: boolean;

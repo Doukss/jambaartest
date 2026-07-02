@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Animated } from "react-native";
 import { useRouter } from "expo-router";
-import { useCheckPendingRegistration } from "@/src/hooks/usePendingRegistration";
+import { useCheckPendingRegistration } from "./usePendingRegistration";
 
 export function useWelcomeScreen() {
   const router = useRouter();

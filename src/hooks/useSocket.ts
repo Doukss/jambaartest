@@ -3,13 +3,15 @@ import { io, Socket } from "socket.io-client";
 import Constants from "expo-constants";
 import * as Haptics from "expo-haptics";
 import { useQueryClient } from "@tanstack/react-query";
-import { useAuthStore } from "@/src/store/auth.store";
-import { tokenManager } from "@/src/utils/token.utils";
-import { QUERY_KEYS } from "@/src/constants/query_key";
-import { Alert } from "@/src/types/alert.types";
-import logger from "@/src/utils/logger.utils";
+
 import { useAlertStore } from "../store/alerts.store";
 import { clearPendingQr } from "../utils/qr.utils";
+import logger from "@/utils/logger.utils";
+import { tokenManager } from "@/utils/token.utils";
+import { Alert as RNAlert } from "react-native";
+import { useAuthStore } from "@/store/auth.store";
+import { QUERY_KEYS } from "@/constants/query_key";
+import { Alert } from "@/types/alert.types";
 
 export const useSocket = () => {
   const queryClient = useQueryClient();
@@ -77,7 +79,7 @@ export const useSocket = () => {
       setInAppAlert({
         id: data.id,
         title:
-          data.urgencyLevel === "VITAL"
+          data.urgencyLevel=== "VITAL"
             ? "🚨 URGENCE VITALE"
             : "🩸 Alerte donneur",
         body: `Groupe ${data.bloodType} requis — ${data.healthStructure?.name}`,

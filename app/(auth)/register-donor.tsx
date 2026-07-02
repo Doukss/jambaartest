@@ -33,7 +33,7 @@ import {
   DonorStep3Values,
   RegisterDonorFormValues,
 } from "@/validators/auth.schema";
-import { useRegisterDonor } from "@/hooks/useDonationDays";
+import { useRegisterDonor } from "@/hooks/useAuth";
 import { FormInput } from "@/components/ui/FormInput";
 
 // ─── Données statiques ─────────────────────────────────────────

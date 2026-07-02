@@ -1,10 +1,11 @@
 import { useState, useCallback } from "react";
 import { useRouter } from "expo-router";
-import { useAuthStore } from "@/src/store/auth.store";
-import { useLeaderboard } from "@/src/hooks/useJambaar";
-import { useSmartBack } from "@/src/hooks/useSmartBack";
-import { isNetworkError } from "@/src/utils/error.utils";
-import { ScopeType } from "@/src/constants/jambaarConfig";
+import { useSmartBack } from "./useSmartBack";
+import { useAuthStore } from "@/store/auth.store";
+import { ScopeType } from "@/constants/jambaarConfig";
+import { useLeaderboard } from "./useJambaar";
+import { isNetworkError } from "@/utils/error.utils";
+
 
 export function useLeaderboardScreen() {
   const router = useRouter();

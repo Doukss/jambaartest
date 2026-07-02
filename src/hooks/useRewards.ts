@@ -1,6 +1,7 @@
+import { rewardsApi } from "@/api/rewards.api";
+import { QUERY_KEYS } from "@/constants/query_key";
 import { useQuery } from "@tanstack/react-query";
-import { rewardsApi } from "@/src/api/rewards.api";
-import { QUERY_KEYS } from "@/src/constants/query_key";
+
 
 export const useRewards = () => {
   return useQuery({

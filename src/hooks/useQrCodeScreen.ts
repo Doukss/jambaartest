@@ -3,8 +3,9 @@ import { Animated, Share, Alert } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import * as Brightness from "expo-brightness";
 import * as Haptics from "expo-haptics";
-import { useCancelConfirmation } from "@/src/hooks/useAlerts";
-import { clearPendingQr } from "@/src/utils/qr.utils";
+import { useCancelConfirmation } from "./useAlerts";
+import { clearPendingQr } from "@/utils/qr.utils";
+
 
 export function useQrCodeScreen() {
   const router = useRouter();

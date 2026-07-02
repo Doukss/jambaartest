@@ -2,12 +2,13 @@ import { useEffect, useRef } from "react";
 import { Platform } from "react-native";
 import { useRouter } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useAuthStore } from "@/src/store/auth.store";
-import { useLocation } from "@/src/hooks/useLocation";
-import { useNotifications } from "@/src/hooks/useNotifications";
-import { useSocket } from "@/src/hooks/useSocket";
-import { useAlertStore } from "@/src/store/alerts.store";
-import logger from "@/src/utils/logger.utils";
+import { useAuthStore } from "@/store/auth.store";
+import { useLocation } from "./useLocation";
+import { useNotifications } from "./useNotifications";
+import { useSocket } from "./useSocket";
+import logger from "@/utils/logger.utils";
+import { useAlertStore } from "@/store/alerts.store";
+
 
 export function useDonorLayout() {
   const router = useRouter();

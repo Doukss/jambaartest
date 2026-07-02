@@ -3,10 +3,11 @@ import { Animated } from "react-native";
 import { useRouter } from "expo-router";
 import * as Haptics from "expo-haptics";
 import dayjs from "dayjs";
-import { useJambaarProfile } from "@/src/hooks/useJambaar";
-import { isNetworkError } from "@/src/utils/error.utils";
-import { GRADE_CONFIG } from "@/src/constants/jambaarConfig";
+
 import { useIsEligible } from "./useAuthStore";
+import { useJambaarProfile } from "./useJambaar";
+import { isNetworkError } from "@/utils/error.utils";
+import { GRADE_CONFIG } from "@/constants/jambaarConfig";
 
 export function useJambaarProfileScreen() {
   const router = useRouter();

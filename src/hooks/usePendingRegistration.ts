@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Alert } from "react-native";
 import { useRouter } from "expo-router";
-import { registrationManager } from "@/src/utils/registration.utils";
+import { registrationManager } from "@/utils/registration.utils";
 
 export const useCheckPendingRegistration = () => {
   const router = useRouter();

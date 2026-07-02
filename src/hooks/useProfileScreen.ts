@@ -2,13 +2,14 @@ import { useEffect, useRef } from "react";
 import { Animated, Alert } from "react-native";
 import * as Haptics from "expo-haptics";
 import { useRouter } from "expo-router";
-import { useAuthStore } from "@/src/store/auth.store";
-import { useIsEligible, useUserJambaarProfile } from "@/src/hooks/useAuthStore";
-import { useUpdateAvailability } from "@/src/hooks/useAvailability";
-import { useLogout } from "@/src/hooks/useAuth";
-import { useColors } from "@/src/theme/useTheme";
-import { BLOOD_TYPE_LABELS } from "@/src/utils/format.utils";
+
 import { GRADE_CONFIG } from "../constants/jambaarConfig";
+import { useColors } from "@/theme/useTheme";
+import { useAuthStore } from "@/store/auth.store";
+import { useIsEligible, useUserJambaarProfile } from "./useAuthStore";
+import { useUpdateAvailability } from "./useAvailability";
+import { useLogout } from "./useAuth";
+import { BLOOD_TYPE_LABELS } from "@/utils/format.utils";
 
 export function useProfileScreen() {
   const router = useRouter();
@@ -68,7 +69,7 @@ export function useProfileScreen() {
     : GRADE_CONFIG.ASPIRANT;
 
   // 👈 3. On résout la vraie couleur à partir du colorKey
-  const gradeColor = colors[rawGradeConfig.colorKey];
+  const gradeColor = colors[rawGradeConfig.colorKey as keyof typeof colors];
 
   // 👈 4. On reconstitue un objet gradeConfig complet avec la vraie couleur
   const gradeConfig = {

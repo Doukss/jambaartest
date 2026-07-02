@@ -3,10 +3,11 @@ import { Animated, Alert, Platform } from "react-native";
 import * as Haptics from "expo-haptics";
 import * as Notifications from "expo-notifications";
 import * as Linking from "expo-linking";
-import { useAuthStore } from "@/src/store/auth.store";
-import { useLocation } from "@/src/hooks/useLocation";
-import { useSmartBack } from "@/src/hooks/useSmartBack";
-import { usersApi } from "@/src/api/users.api";
+import { useAuthStore } from "@/store/auth.store";
+import { useLocation } from "./useLocation";
+import { useSmartBack } from "./useSmartBack";
+import { usersApi } from "@/api/users.api";
+
 
 export function useSettingsScreen() {
   const user = useAuthStore((s) => s.user);

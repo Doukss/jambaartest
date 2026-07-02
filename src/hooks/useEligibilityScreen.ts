@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Animated } from "react-native";
 import { useRouter } from "expo-router";
 import * as Haptics from "expo-haptics";
-import { useSmartBack } from "@/src/hooks/useSmartBack";
+import { useSmartBack } from "./useSmartBack";
 
 export function useEligibilityScreen() {
   const router = useRouter();

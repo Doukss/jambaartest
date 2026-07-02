@@ -1,6 +1,7 @@
+import { jambaarApi } from "@/api/jambaar.api";
+import { QUERY_KEYS } from "@/constants/query_key";
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
-import { jambaarApi } from "@/src/api/jambaar.api";
-import { QUERY_KEYS } from "@/src/constants/query_key";
+
 
 export const useJambaarProfile = () => {
   return useQuery({

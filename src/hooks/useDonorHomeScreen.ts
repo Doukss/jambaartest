@@ -1,18 +1,15 @@
 import { useState, useCallback, useEffect } from "react";
-import { Alert } from "react-native";
+import { Alert as RNAlert } from "react-native";
 import { Href, useRouter } from "expo-router";
-import { useAuthStore } from "@/src/store/auth.store";
-import {
-  useActiveEngagement,
-  useCancelConfirmation,
-  useNearbyAlerts,
-} from "@/src/hooks/useAlerts";
-import { useUpdateAvailability } from "@/src/hooks/useAvailability";
-import { useBloodTypeBanner } from "@/src/hooks/usebloodtypebanner";
-import { useIsEligible } from "@/src/hooks/useAuthStore";
-import { Alert as AlertType } from "@/src/types/alert.types";
-import { getPendingQr, PendingQr } from "@/src/utils/qr.utils";
-import { FilterType } from "@/src/constants/donorHomeConfig";
+import { useActiveEngagement, useCancelConfirmation, useNearbyAlerts } from "./useAlerts";
+import { useUpdateAvailability } from "./useAvailability";
+import { FilterType } from "@/constants/donorHomeConfig";
+import { getPendingQr, PendingQr } from "@/utils/qr.utils";
+import { useAuthStore } from "@/store/auth.store";
+import { useBloodTypeBanner } from "./usebloodtypebanner";
+import { useIsEligible } from "./useAuthStore";
+import { Alert } from "@/types/alert.types";
+
 
 export function useDonorHomeScreen() {
   const router = useRouter();
@@ -58,12 +55,12 @@ export function useDonorHomeScreen() {
       ? { type: "expired" as const, data: localQr }
       : null;
 
-  const filteredAlerts: AlertType[] =
+  const filteredAlerts: Alert[] =
     alerts?.filter(
-      (a) => activeFilter === "ALL" || a.urgencyLevel === activeFilter,
+      (a: Alert) => activeFilter === "ALL" || a.urgencyLevel === activeFilter,
     ) ?? [];
   const vitalCount =
-    alerts?.filter((a) => a.urgencyLevel === "VITAL").length ?? 0;
+    alerts?.filter((a: Alert) => a.urgencyLevel === "VITAL").length ?? 0;
 
   // ── Actions ──
   const handleOpenQrCode = useCallback(
@@ -86,7 +83,7 @@ export function useDonorHomeScreen() {
   );
 
   const handleCancelDirect = async (alertId: string) => {
-    Alert.alert(
+    RNAlert.alert(
       "Annuler cet engagement ?",
       "Votre pass a expiré. Si vous n'êtes pas à l'hôpital, annulez pour redevenir disponible.",
       [

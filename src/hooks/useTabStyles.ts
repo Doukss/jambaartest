@@ -1,5 +1,5 @@
+import { useColors, useThemedStyles } from "@/theme/useTheme";
 import { Platform } from "react-native";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
 
 /**
  * Styles statiques de la tab bar et des éléments
