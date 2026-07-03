@@ -1,4 +1,4 @@
-import { useThemedStyles } from "@/src/theme/useTheme";
+import { useThemedStyles } from "../useTheme";
 
 export const useOtpVerifyStyles = () => {
   return useThemedStyles((c) => ({

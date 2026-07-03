@@ -1,5 +1,5 @@
+import { useColors } from "@/theme/useTheme";
 import { Stack } from "expo-router";
-import { useColors } from "@/src/theme/useTheme";
 
 export default function AuthLayout() {
   const colors = useColors();
