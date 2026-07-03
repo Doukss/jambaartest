@@ -1,5 +1,5 @@
-import { useThemedStyles } from "@/src/theme/useTheme";
-import { useBottomTabBarHeight } from "@/src/hooks/useTabBarHeight";
+﻿import { useThemedStyles } from "@/theme/useTheme";
+import { useBottomTabBarHeight } from "@/hooks/useTabBarHeight";
 
 export function useQrCodeStyles() {
   const tabBarHeight = useBottomTabBarHeight();

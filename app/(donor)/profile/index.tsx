@@ -1,4 +1,4 @@
-import {
+﻿import {
   View,
   Text,
   ScrollView,
@@ -11,10 +11,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Href } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
-import { useProfileScreen } from "@/src/hooks/useProfileScreen";
-import { useProfileStyles } from "@/src/styles/useProfileStyles";
-import { ProfileRow } from "@/src/components/profile/ProfileRow";
-import { HeroCard } from "@/src/components/profile/HeroCard";
+import { useProfileScreen } from "@/hooks/useProfileScreen";
+import { useProfileStyles } from "@/styles/useProfileStyles";
+import { ProfileRow } from "@/components/profile/ProfileRow";
+import { HeroCard } from "@/components/profile/HeroCard";
 
 export default function ProfileScreen() {
   const {

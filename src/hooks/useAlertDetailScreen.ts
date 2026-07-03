@@ -1,8 +1,8 @@
-import { useState, useRef, useCallback } from "react";
+﻿import { useState, useRef, useCallback } from "react";
 import { Share, Animated } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import * as Haptics from "expo-haptics";
-import { useIsEligible } from "@/src/hooks/useAuthStore";
+import { useIsEligible } from "@/hooks/useAuthStore";
 import {
   useAlert,
   useActiveEngagement,
@@ -10,10 +10,10 @@ import {
   useConfirmAlert,
   useDeclineAlert,
   useHasActiveConfirmation,
-} from "@/src/hooks/useAlerts";
-import { useSmartBack } from "@/src/hooks/useSmartBack";
-import { savePendingQr } from "@/src/utils/qr.utils";
-import { formatBloodType } from "@/src/utils/format.utils";
+} from "@/hooks/useAlerts";
+import { useSmartBack } from "@/hooks/useSmartBack";
+import { savePendingQr } from "@/utils/qr.utils";
+import { formatBloodType } from "@/utils/format.utils";
 
 export function useAlertDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();

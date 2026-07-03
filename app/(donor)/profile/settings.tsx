@@ -1,4 +1,4 @@
-import {
+﻿import {
   View,
   Text,
   ScrollView,
@@ -10,14 +10,14 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useThemeStore } from "@/src/store/theme.store";
-import { ThemeToggle } from "@/src/components/ui/ThemeToggle";
-import { useColors } from "@/src/theme/useTheme";
+import { useThemeStore } from "@/store/theme.store";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { useColors } from "@/theme/useTheme";
 
-import { useSettingsScreen } from "@/src/hooks/useSettingsScreen";
-import { useSettingsStyles } from "@/src/styles/useProfileSettingStyles";
-import { SettingRow } from "@/src/components/settings/SettingRow";
-import { InfoBanner } from "@/src/components/settings/InfoBanner";
+import { useSettingsScreen } from "@/hooks/useSettingsScreen";
+import { useSettingsStyles } from "@/styles/useProfileSettingStyles";
+import { SettingRow } from "@/components/settings/SettingRow";
+import { InfoBanner } from "@/components/settings/InfoBanner";
 
 export default function SettingsScreen() {
   const colors = useColors();

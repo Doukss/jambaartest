@@ -1,7 +1,7 @@
-import { View, Text, Pressable } from "react-native";
+﻿import { View, Text, Pressable } from "react-native";
 import { useCallback, useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
-import { useThemedStyles } from "@/src/theme/useTheme";
+import { useThemedStyles } from "@/theme/useTheme";
 
 interface NetworkErrorScreenProps {
   onRetry?: () => void;

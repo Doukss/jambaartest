@@ -1,5 +1,5 @@
-import dayjs from "dayjs";
-import { Badge } from "@/src/types/domain.types";
+﻿import dayjs from "dayjs";
+import { Badge } from "@/types/domain.types";
 
 export function getDefaultEmoji(badge: Badge): string {
   const name = badge.name.toLowerCase();

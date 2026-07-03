@@ -1,9 +1,9 @@
-import React from "react";
+﻿import React from "react";
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import dayjs from "dayjs";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
-import { Coupon } from "@/src/types/domain.types";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
+import { Coupon } from "@/types/domain.types";
 
 interface CouponCardProps {
   coupon: Coupon;

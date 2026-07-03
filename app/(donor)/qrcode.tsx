@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import {
   View,
   Text,
@@ -11,11 +11,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import QRCode from "react-native-qrcode-svg";
 import { StatusBar } from "expo-status-bar";
-import { useColors } from "@/src/theme/useTheme";
-import { useThemeStore } from "@/src/store/theme.store";
+import { useColors } from "@/theme/useTheme";
+import { useThemeStore } from "@/store/theme.store";
 
-import { useQrCodeScreen } from "@/src/hooks/useQrCodeScreen";
-import { useQrCodeStyles } from "@/src/styles/useQrCodeStyles";
+import { useQrCodeScreen } from "@/hooks/useQrCodeScreen";
+import { useQrCodeStyles } from "@/styles/useQrCodeStyles";
 
 export default function QrCodeScreen() {
   const colors = useColors();

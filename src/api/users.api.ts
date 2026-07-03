@@ -1,10 +1,10 @@
-import {
+﻿import {
   UpdateLocationPayload,
   UpdateProfilePayload,
   User,
-} from "@/src/types/user.types";
+} from "@/types/user.types";
 import { api } from "./client";
-import { buildApiBody } from "@/src/utils/form-data.utils";
+import { buildApiBody } from "@/utils/form-data.utils";
 import { ActiveEngagement } from "../types/alert.types";
 
 export const usersApi = {

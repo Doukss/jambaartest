@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import {
   View,
   Text,
@@ -8,14 +8,14 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
-import { NetworkErrorScreen } from "@/src/components/ui/NetworkErrorScreen";
-import { LeaderboardSkeleton } from "@/src/components/jambaar/LeaderboardSkeleton";
-import { PodiumTop3 } from "@/src/components/jambaar/PodiumTop3";
-import { LeaderboardRow } from "@/src/components/jambaar/LeaderboardRow";
-import { useLeaderboardScreen } from "@/src/hooks/useLeaderboardScreen";
-import { useLeaderboardStyles } from "@/src/styles/useLeaderboardStyles";
-import { SCOPES } from "@/src/constants/jambaarConfig";
+import { useColors } from "@/theme/useTheme";
+import { NetworkErrorScreen } from "@/components/ui/NetworkErrorScreen";
+import { LeaderboardSkeleton } from "@/components/jambaar/LeaderboardSkeleton";
+import { PodiumTop3 } from "@/components/jambaar/PodiumTop3";
+import { LeaderboardRow } from "@/components/jambaar/LeaderboardRow";
+import { useLeaderboardScreen } from "@/hooks/useLeaderboardScreen";
+import { useLeaderboardStyles } from "@/styles/useLeaderboardStyles";
+import { SCOPES } from "@/constants/jambaarConfig";
 
 export default function LeaderboardScreen() {
   const colors = useColors();

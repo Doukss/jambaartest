@@ -1,8 +1,8 @@
-import { View, Text, Image, TouchableOpacity } from "react-native";
+﻿import { View, Text, Image, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import dayjs from "dayjs";
-import { useColors } from "@/src/theme/useTheme";
+import { useColors } from "@/theme/useTheme";
 import { StatBadge } from "./StatBadge";
 
 export function HeroCard({

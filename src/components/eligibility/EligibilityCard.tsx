@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from "react";
+﻿import React, { useEffect, useRef } from "react";
 import { View, Text, Animated } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
+import { useColors } from "@/theme/useTheme";
 
 interface BaseItem {
   icon: keyof typeof Ionicons.glyphMap;

@@ -1,5 +1,5 @@
-import { View } from "react-native";
-import { useColors } from "@/src/theme/useTheme";
+﻿import { View } from "react-native";
+import { useColors } from "@/theme/useTheme";
 
 export function SkeletonCard() {
   const colors = useColors();

@@ -1,4 +1,4 @@
-import {
+﻿import {
   View,
   Text,
   ScrollView,
@@ -7,13 +7,13 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
-import { NetworkErrorScreen } from "@/src/components/ui/NetworkErrorScreen";
-import { BadgesSkeleton } from "@/src/components/jambaar/BadgesSkeleton";
-import { BadgeCard } from "@/src/components/jambaar/BadgeCard";
-import { SectionHeader } from "@/src/components/jambaar/SectionHeader";
-import { useBadgesScreen } from "@/src/hooks/useBadgesScreen";
-import { useBadgesStyles } from "@/src/styles/useBadgesStyles";
+import { useColors } from "@/theme/useTheme";
+import { NetworkErrorScreen } from "@/components/ui/NetworkErrorScreen";
+import { BadgesSkeleton } from "@/components/jambaar/BadgesSkeleton";
+import { BadgeCard } from "@/components/jambaar/BadgeCard";
+import { SectionHeader } from "@/components/jambaar/SectionHeader";
+import { useBadgesScreen } from "@/hooks/useBadgesScreen";
+import { useBadgesStyles } from "@/styles/useBadgesStyles";
 
 export default function BadgesScreen() {
   const colors = useColors();

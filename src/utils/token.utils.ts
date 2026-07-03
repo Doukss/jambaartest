@@ -1,4 +1,4 @@
-import { PUBLIC_ENDPOINTS } from "@/src/config/api.config";
+﻿import { PUBLIC_ENDPOINTS } from "@/config/api.config";
 import * as SecureStore from "expo-secure-store";
 
 const KEYS = {

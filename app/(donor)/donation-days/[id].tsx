@@ -10,11 +10,11 @@ import { Ionicons } from "@expo/vector-icons";
 import { Image } from "expo-image";
 import dayjs from "dayjs";
 import "dayjs/locale/fr";
-import { useColors } from "@/src/theme/useTheme";
-import { NetworkErrorScreen } from "@/src/components/ui/NetworkErrorScreen";
-import { DonorDayDetailSkeleton } from "@/src/components/donations-days/DonorDayDetailSkeleton"; // 🆕
-import { useDonorDayDetailScreen } from "@/src/hooks/useDonorDayDetailScreen";
-import { useDonorDayDetailStyles } from "@/src/styles/useDonorDayDetailStyles";
+import { useColors } from "@/theme/useTheme";
+import { NetworkErrorScreen } from "@/components/ui/NetworkErrorScreen";
+import { DonorDayDetailSkeleton } from "@/components/donations-days/DonorDayDetailSkeleton"; // 🆕
+import { useDonorDayDetailScreen } from "@/hooks/useDonorDayDetailScreen";
+import { useDonorDayDetailStyles } from "@/styles/useDonorDayDetailStyles";
 
 dayjs.locale("fr");
 

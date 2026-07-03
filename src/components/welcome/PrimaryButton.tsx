@@ -1,7 +1,7 @@
-import React from "react";
+﻿import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
+import { useColors } from "@/theme/useTheme";
 
 export function PrimaryButton({
   icon,

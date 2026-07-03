@@ -1,4 +1,4 @@
-import {
+﻿import {
   View,
   Text,
   ScrollView,
@@ -7,19 +7,19 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
-import { useBottomTabBarHeight } from "@/src/hooks/useTabBarHeight";
+import { useColors } from "@/theme/useTheme";
+import { useBottomTabBarHeight } from "@/hooks/useTabBarHeight";
 
-import { useEligibilityScreen } from "@/src/hooks/useEligibilityScreen";
-import { useEligibilityStyles } from "@/src/styles/useEligibilityStyles";
-import { EligibilityCard } from "@/src/components/eligibility/EligibilityCard";
+import { useEligibilityScreen } from "@/hooks/useEligibilityScreen";
+import { useEligibilityStyles } from "@/styles/useEligibilityStyles";
+import { EligibilityCard } from "@/components/eligibility/EligibilityCard";
 import {
   HERO,
   REQUIRED,
   CONTRAINDICATIONS,
   TIPS,
-} from "@/src/constants/eligibilityData";
-import { useIsEligible } from "@/src/hooks/useAuthStore";
+} from "@/constants/eligibilityData";
+import { useIsEligible } from "@/hooks/useAuthStore";
 
 export default function EligibilityScreen() {
   const colors = useColors();

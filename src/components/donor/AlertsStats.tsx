@@ -1,5 +1,5 @@
-import { View, Text } from "react-native";
-import { useColors } from "@/src/theme/useTheme";
+﻿import { View, Text } from "react-native";
+import { useColors } from "@/theme/useTheme";
 
 interface AlertsStatsProps {
   total: number;

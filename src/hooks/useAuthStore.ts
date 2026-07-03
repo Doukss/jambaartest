@@ -1,4 +1,4 @@
-import { useAuthStore } from "@/src/store/auth.store";
+﻿import { useAuthStore } from "@/store/auth.store";
 import dayjs from "dayjs";
 import logger from "../utils/logger.utils";
 import { useEffect, useState } from "react";

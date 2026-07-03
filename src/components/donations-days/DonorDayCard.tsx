@@ -1,11 +1,11 @@
-import React from "react";
+﻿import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { Image } from "expo-image";
 import dayjs from "dayjs";
 import "dayjs/locale/fr";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
-import { DonationDay } from "@/src/types/donation-day.types";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
+import { DonationDay } from "@/types/donation-day.types";
 
 dayjs.locale("fr");
 

@@ -1,13 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+﻿import React, { useEffect, useRef, useState } from "react";
 import { View, Text, Animated, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
-import { Badge } from "@/src/types/domain.types";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
+import { Badge } from "@/types/domain.types";
 import {
   getDefaultEmoji,
   isNewBadge,
   parseCriteria,
-} from "@/src/utils/badge.utils";
+} from "@/utils/badge.utils";
 import dayjs from "dayjs";
 
 interface BadgeCardProps {

@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
+﻿import React, { useRef } from "react";
 import { TextInput, View, Animated, StyleSheet } from "react-native";
-import { useThemedStyles } from "@/src/theme/useTheme";
-import { AppColors } from "@/src/theme/colors";
+import { useThemedStyles } from "@/theme/useTheme";
+import { AppColors } from "@/theme/colors";
 
 const OTP_LENGTH = 6;
 

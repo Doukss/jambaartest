@@ -1,8 +1,8 @@
-import React from "react";
+﻿import React from "react";
 import { View, Text, TouchableOpacity, ActivityIndicator } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
-import { Reward } from "@/src/types/domain.types";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
+import { Reward } from "@/types/domain.types";
 
 interface RewardCardProps {
   reward: Reward;

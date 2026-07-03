@@ -1,5 +1,5 @@
-import { Platform } from "react-native";
-import { useThemedStyles } from "@/src/theme/useTheme";
+﻿import { Platform } from "react-native";
+import { useThemedStyles } from "@/theme/useTheme";
 import { useBottomTabBarHeight } from "../hooks/useTabBarHeight";
 
 export function useSettingsStyles() {

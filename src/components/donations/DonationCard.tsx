@@ -1,12 +1,12 @@
-import React from "react";
+﻿import React from "react";
 import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import "dayjs/locale/fr";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
-import { Donation } from "@/src/types/domain.types";
-import { BLOOD_TYPE_LABELS } from "@/src/utils/format.utils";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
+import { Donation } from "@/types/domain.types";
+import { BLOOD_TYPE_LABELS } from "@/utils/format.utils";
 
 dayjs.extend(relativeTime);
 dayjs.locale("fr");

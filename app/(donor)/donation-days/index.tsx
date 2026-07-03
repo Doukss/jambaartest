@@ -1,12 +1,12 @@
-import { View, Text, FlatList } from "react-native";
+﻿import { View, Text, FlatList } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
-import { NetworkErrorScreen } from "@/src/components/ui/NetworkErrorScreen";
-import { DonorDaySkeleton } from "@/src/components/donations-days/DonorDaySkeleton";
-import { DonorDayCard } from "@/src/components/donations-days/DonorDayCard";
-import { useDonorDonationDays } from "@/src/hooks/useDonorDonationDays";
-import { useDonorDaysStyles } from "@/src/styles/useDonorDaysStyles";
+import { useColors } from "@/theme/useTheme";
+import { NetworkErrorScreen } from "@/components/ui/NetworkErrorScreen";
+import { DonorDaySkeleton } from "@/components/donations-days/DonorDaySkeleton";
+import { DonorDayCard } from "@/components/donations-days/DonorDayCard";
+import { useDonorDonationDays } from "@/hooks/useDonorDonationDays";
+import { useDonorDaysStyles } from "@/styles/useDonorDaysStyles";
 
 export default function DonorDonationDaysScreen() {
   const colors = useColors();

@@ -1,6 +1,6 @@
-import { View, Text } from "react-native";
+﻿import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
 
 interface EmptyStateProps {
   icon: keyof typeof Ionicons.glyphMap;

@@ -1,16 +1,16 @@
-import React from "react";
+﻿import React from "react";
 import { View, Text, TouchableOpacity, Animated } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
-import { useThemeStore } from "@/src/store/theme.store";
-import { ThemeToggle } from "@/src/components/ui/ThemeToggle";
-import { useColors } from "@/src/theme/useTheme";
+import { useThemeStore } from "@/store/theme.store";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { useColors } from "@/theme/useTheme";
 
-import { useWelcomeScreen } from "@/src/hooks/useWelcomeScreen";
-import { useWelcomeStyles } from "@/src/styles/useWelcomeStyles";
-import { HeroOrb } from "@/src/components/welcome/HeroOrb";
-import { PrimaryButton } from "@/src/components/welcome/PrimaryButton";
+import { useWelcomeScreen } from "@/hooks/useWelcomeScreen";
+import { useWelcomeStyles } from "@/styles/useWelcomeStyles";
+import { HeroOrb } from "@/components/welcome/HeroOrb";
+import { PrimaryButton } from "@/components/welcome/PrimaryButton";
 
 // Logo gardé en local car très petit et spécifique à cet écran
 function JambaarLogo() {

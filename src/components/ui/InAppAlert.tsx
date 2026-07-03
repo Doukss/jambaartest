@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+﻿import React, { useEffect, useRef } from "react";
 import {
   View,
   Text,
@@ -8,8 +8,8 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import { InAppAlertData } from "@/src/store/alerts.store";
-import { useThemedStyles } from "@/src/theme/useTheme";
+import { InAppAlertData } from "@/store/alerts.store";
+import { useThemedStyles } from "@/theme/useTheme";
 
 // Couleurs sémantiques fixes — indépendantes du thème
 const VITAL_COLOR = "#DC1E1E";

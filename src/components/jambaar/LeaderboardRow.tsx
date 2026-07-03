@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
+﻿import React, { useEffect, useRef } from "react";
 import { View, Text, Animated } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
-import { LeaderboardEntry } from "@/src/types/domain.types";
-import { DonorGrade } from "@/src/types/shared.types";
-import { GRADE_EMOJI } from "@/src/constants/jambaarConfig";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
+import { LeaderboardEntry } from "@/types/domain.types";
+import { DonorGrade } from "@/types/shared.types";
+import { GRADE_EMOJI } from "@/constants/jambaarConfig";
 
 interface LeaderboardRowProps {
   item: LeaderboardEntry;

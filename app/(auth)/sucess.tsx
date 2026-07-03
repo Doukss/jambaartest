@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState } from "react";
+﻿import React, { useCallback, useRef, useState } from "react";
 import {
   View,
   Text,
@@ -11,7 +11,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
 
 const { width: SCREEN_W, height: SCREEN_H } = Dimensions.get("window");
 

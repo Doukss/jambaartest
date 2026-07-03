@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
+﻿import React, { useEffect, useRef } from "react";
 import { View, Text, TouchableOpacity, Animated } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
-import { ActiveEngagement } from "@/src/types/alert.types";
-import { PendingQr } from "@/src/utils/qr.utils";
-import { BLOOD_TYPE_LABELS } from "@/src/utils/format.utils";
+import { useColors } from "@/theme/useTheme";
+import { ActiveEngagement } from "@/types/alert.types";
+import { PendingQr } from "@/utils/qr.utils";
+import { BLOOD_TYPE_LABELS } from "@/utils/format.utils";
 
 interface EngagementBannerProps {
   engagement: ActiveEngagement | PendingQr;

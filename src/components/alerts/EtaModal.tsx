@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import {
   View,
   Text,
@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
 
 interface EtaModalProps {
   visible: boolean;

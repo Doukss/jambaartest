@@ -1,4 +1,4 @@
-import axios, {
+﻿import axios, {
   AxiosError,
   InternalAxiosRequestConfig,
   AxiosResponse,
@@ -7,8 +7,8 @@ import {
   API_CONFIG,
   DEFAULT_HEADERS,
   EXPECTED_401_ENDPOINTS,
-} from "@/src/config/api.config";
-import { tokenManager } from "@/src/utils/token.utils";
+} from "@/config/api.config";
+import { tokenManager } from "@/utils/token.utils";
 
 // ─────────────────────────────────────────────────────────────
 // Instance Axios

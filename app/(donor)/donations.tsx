@@ -1,4 +1,4 @@
-import {
+﻿import {
   View,
   Text,
   FlatList,
@@ -7,12 +7,12 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
-import { NetworkErrorScreen } from "@/src/components/ui/NetworkErrorScreen";
-import { useDonationsScreen } from "@/src/hooks/useDonationsScreen";
-import { useDonationsStyles } from "@/src/styles/useDonationsStyles";
-import { DonationsSkeleton } from "@/src/components/donations/DonationsSkeleton";
-import { DonationCard } from "@/src/components/donations/DonationCard";
+import { useColors } from "@/theme/useTheme";
+import { NetworkErrorScreen } from "@/components/ui/NetworkErrorScreen";
+import { useDonationsScreen } from "@/hooks/useDonationsScreen";
+import { useDonationsStyles } from "@/styles/useDonationsStyles";
+import { DonationsSkeleton } from "@/components/donations/DonationsSkeleton";
+import { DonationCard } from "@/components/donations/DonationCard";
 
 export default function DonationsScreen() {
   const colors = useColors();

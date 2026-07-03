@@ -1,6 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import { View, ScrollView } from "react-native";
-import { useColors } from "@/src/theme/useTheme";
+import { useColors } from "@/theme/useTheme";
 
 function SkeletonBlock({
   width,

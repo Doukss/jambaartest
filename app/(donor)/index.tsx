@@ -1,23 +1,23 @@
-import { View, Text, TouchableOpacity, Switch } from "react-native";
+﻿import { View, Text, TouchableOpacity, Switch } from "react-native";
 import { FlatList } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
-import { isNetworkError } from "@/src/utils/error.utils";
+import { useColors } from "@/theme/useTheme";
+import { isNetworkError } from "@/utils/error.utils";
 
-import { AlertCard } from "@/src/components/alerts/AlertCard";
-import { EmptyState } from "@/src/components/ui/EmptyState";
-import { NetworkErrorScreen } from "@/src/components/ui/NetworkErrorScreen";
-import { SkeletonCard } from "@/src/components/donor/SkeletonCard";
-import { AlertsStats } from "@/src/components/donor/AlertsStats";
-import { EngagementBanner } from "@/src/components/donor/EngagementBanner";
-import { RecoveryScreen } from "@/src/components/donor/RecoveryScreen";
+import { AlertCard } from "@/components/alerts/AlertCard";
+import { EmptyState } from "@/components/ui/EmptyState";
+import { NetworkErrorScreen } from "@/components/ui/NetworkErrorScreen";
+import { SkeletonCard } from "@/components/donor/SkeletonCard";
+import { AlertsStats } from "@/components/donor/AlertsStats";
+import { EngagementBanner } from "@/components/donor/EngagementBanner";
+import { RecoveryScreen } from "@/components/donor/RecoveryScreen";
 
-import { useDonorHomeScreen } from "@/src/hooks/useDonorHomeScreen";
-import { useDonorHomeStyles } from "@/src/styles/useDonorHomeStyles";
-import { FILTERS } from "@/src/constants/donorHomeConfig";
-import { BloodTypeBanner } from "@/src/components/donor/BloodTypeBanner";
-import { useBottomTabBarHeight } from "@/src/hooks/useTabBarHeight";
+import { useDonorHomeScreen } from "@/hooks/useDonorHomeScreen";
+import { useDonorHomeStyles } from "@/styles/useDonorHomeStyles";
+import { FILTERS } from "@/constants/donorHomeConfig";
+import { BloodTypeBanner } from "@/components/donor/BloodTypeBanner";
+import { useBottomTabBarHeight } from "@/hooks/useTabBarHeight";
 
 export default function DonorHomeScreen() {
   const colors = useColors();

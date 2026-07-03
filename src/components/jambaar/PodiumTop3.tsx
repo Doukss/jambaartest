@@ -1,9 +1,9 @@
-import React from "react";
+﻿import React from "react";
 import { View, Text } from "react-native";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
-import { LeaderboardEntry } from "@/src/types/domain.types";
-import { DonorGrade } from "@/src/types/shared.types";
-import { GRADE_EMOJI } from "@/src/constants/jambaarConfig";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
+import { LeaderboardEntry } from "@/types/domain.types";
+import { DonorGrade } from "@/types/shared.types";
+import { GRADE_EMOJI } from "@/constants/jambaarConfig";
 
 interface PodiumTop3Props {
   entries: LeaderboardEntry[];

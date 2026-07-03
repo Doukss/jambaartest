@@ -1,5 +1,5 @@
-import { useThemedStyles } from "@/src/theme/useTheme";
-import { useThemeStore } from "@/src/store/theme.store";
+﻿import { useThemedStyles } from "@/theme/useTheme";
+import { useThemeStore } from "@/store/theme.store";
 
 export function useWelcomeStyles() {
   const isDark = useThemeStore((s) => s.theme === "dark");

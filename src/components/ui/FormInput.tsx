@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import {
   View,
   Text,
@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
 
 interface FormInputProps extends TextInputProps {
   label?: string;

@@ -1,9 +1,9 @@
-import {
+﻿import {
   Alert,
   AlertResponse,
   ConfirmAlertPayload,
   ConfirmAlertResponse,
-} from "@/src/types/alert.types";
+} from "@/types/alert.types";
 import { api } from "./client";
 
 export const alertsApi = {

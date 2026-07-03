@@ -1,7 +1,7 @@
-import { View, Text } from "react-native";
+﻿import { View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useThemedStyles } from "@/src/theme/useTheme";
-import { HealthTip, CATEGORY_META } from "@/src/constants/healthTips";
+import { useThemedStyles } from "@/theme/useTheme";
+import { HealthTip, CATEGORY_META } from "@/constants/healthTips";
 
 interface HealthTipCardProps {
   tip: HealthTip;

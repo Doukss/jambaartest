@@ -1,15 +1,15 @@
-import React from "react";
+﻿import React from "react";
 import { View, Text, FlatList, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
-import { NetworkErrorScreen } from "@/src/components/ui/NetworkErrorScreen";
-import { RewardsSkeleton } from "@/src/components/rewards/RewardsSkeleton";
-import { CouponsSkeleton } from "@/src/components/rewards/CouponsSkeleton";
-import { RewardCard } from "@/src/components/rewards/RewardCard";
-import { CouponCard } from "@/src/components/rewards/CouponCard";
-import { useRewardsScreen } from "@/src/hooks/useRewardsScreen";
-import { useRewardsStyles } from "@/src/styles/useRewardsStyles";
+import { useColors } from "@/theme/useTheme";
+import { NetworkErrorScreen } from "@/components/ui/NetworkErrorScreen";
+import { RewardsSkeleton } from "@/components/rewards/RewardsSkeleton";
+import { CouponsSkeleton } from "@/components/rewards/CouponsSkeleton";
+import { RewardCard } from "@/components/rewards/RewardCard";
+import { CouponCard } from "@/components/rewards/CouponCard";
+import { useRewardsScreen } from "@/hooks/useRewardsScreen";
+import { useRewardsStyles } from "@/styles/useRewardsStyles";
 
 export default function RewardsScreen() {
   const colors = useColors();

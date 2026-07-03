@@ -1,13 +1,13 @@
-import React, { useMemo } from "react";
+﻿import React, { useMemo } from "react";
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useThemedStyles, useColors } from "@/src/theme/useTheme";
-import { HealthTipCard } from "@/src/components/donor/HealthTipCard";
+import { useThemedStyles, useColors } from "@/theme/useTheme";
+import { HealthTipCard } from "@/components/donor/HealthTipCard";
 import {
   getShuffledTips,
   CATEGORY_META,
   TipCategory,
-} from "@/src/constants/healthTips";
+} from "@/constants/healthTips";
 
 // ─── Types ────────────────────────────────────────────────────
 interface RecoveryScreenProps {

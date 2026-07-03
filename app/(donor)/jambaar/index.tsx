@@ -1,14 +1,14 @@
-import { View, Text, ScrollView, Animated } from "react-native";
+﻿import { View, Text, ScrollView, Animated } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import dayjs from "dayjs";
-import { useColors } from "@/src/theme/useTheme";
-import { NetworkErrorScreen } from "@/src/components/ui/NetworkErrorScreen";
-import { JambaarSkeleton } from "@/src/components/jambaar/JambaarSkeleton";
-import { StatCard } from "@/src/components/jambaar/StatCard";
-import { ActionBtn } from "@/src/components/jambaar/ActionBtn";
-import { useJambaarProfileScreen } from "@/src/hooks/useJambaarProfileScreen";
-import { useJambaarStyles } from "@/src/styles/useJambaarStyles";
+import { useColors } from "@/theme/useTheme";
+import { NetworkErrorScreen } from "@/components/ui/NetworkErrorScreen";
+import { JambaarSkeleton } from "@/components/jambaar/JambaarSkeleton";
+import { StatCard } from "@/components/jambaar/StatCard";
+import { ActionBtn } from "@/components/jambaar/ActionBtn";
+import { useJambaarProfileScreen } from "@/hooks/useJambaarProfileScreen";
+import { useJambaarStyles } from "@/styles/useJambaarStyles";
 
 export default function JambaarProfileScreen() {
   const colors = useColors();

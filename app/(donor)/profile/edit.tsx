@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+﻿import React, { useState, useCallback, useEffect } from "react";
 import {
   View,
   Text,
@@ -10,7 +10,7 @@ import {
   Alert,
   Animated,
 } from "react-native";
-import { useSmartBack } from "@/src/hooks/useSmartBack";
+import { useSmartBack } from "@/hooks/useSmartBack";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -23,17 +23,17 @@ import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import dayjs from "dayjs";
 import { StatusBar } from "expo-status-bar";
-import { FormInput } from "@/src/components/ui/FormInput";
-import { useAuthStore } from "@/src/store/auth.store";
-import { usersApi } from "@/src/api/users.api";
-import { UpdateProfilePayload, User } from "@/src/types/user.types";
-import { Gender } from "@/src/types/shared.types";
+import { FormInput } from "@/components/ui/FormInput";
+import { useAuthStore } from "@/store/auth.store";
+import { usersApi } from "@/api/users.api";
+import { UpdateProfilePayload, User } from "@/types/user.types";
+import { Gender } from "@/types/shared.types";
 import {
   editProfileSchema,
   EditProfileValues,
-} from "@/src/validators/profile.schema";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
-import { AppColors } from "@/src/theme/colors";
+} from "@/validators/profile.schema";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
+import { AppColors } from "@/theme/colors";
 
 // ─── Données statiques ─────────────────────────────────────────
 const BLOOD_TYPES = [

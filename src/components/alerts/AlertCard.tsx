@@ -1,12 +1,12 @@
-import React, { useEffect, useRef } from "react";
+﻿import React, { useEffect, useRef } from "react";
 import { View, Text, TouchableOpacity, Animated, Share } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { Alert } from "@/src/types/alert.types";
-import { getTimeRemaining } from "@/src/utils/format.utils";
+import { Alert } from "@/types/alert.types";
+import { getTimeRemaining } from "@/utils/format.utils";
 import * as Haptics from "expo-haptics";
-import { useIsEligible } from "@/src/hooks/useAuthStore";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
-import { AppColors } from "@/src/theme/colors";
+import { useIsEligible } from "@/hooks/useAuthStore";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
+import { AppColors } from "@/theme/colors";
 
 // Couleurs sémantiques fixes — indépendantes du thème
 const STANDARD_GREEN = "#1D9E75";

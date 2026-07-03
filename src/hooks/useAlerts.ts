@@ -1,7 +1,7 @@
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { alertsApi } from "@/src/api/alerts.api";
-import { useAuthStore } from "@/src/store/auth.store";
-import { QUERY_KEYS } from "@/src/constants/query_key";
+﻿import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { alertsApi } from "@/api/alerts.api";
+import { useAuthStore } from "@/store/auth.store";
+import { QUERY_KEYS } from "@/constants/query_key";
 import { usersApi } from "../api/users.api";
 import { useUserRole } from "./useAuthStore";
 import { useAlertStore } from "../store/alerts.store";

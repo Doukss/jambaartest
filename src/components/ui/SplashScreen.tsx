@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react";
+﻿import { useEffect, useRef } from "react";
 import { View, Text, Animated } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useColors } from "@/src/theme/useTheme";
-import { useThemeStore } from "@/src/store/theme.store";
+import { useColors } from "@/theme/useTheme";
+import { useThemeStore } from "@/store/theme.store";
 
 function LoadingDots({ color }: { color: string }) {
   const anims = [

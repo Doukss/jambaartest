@@ -1,5 +1,5 @@
-import { DonorGrade } from "@/src/types/shared.types";
-import { AppColors } from "@/src/theme/colors";
+﻿import { DonorGrade } from "@/types/shared.types";
+import { AppColors } from "@/theme/colors";
 import { Ionicons } from "@expo/vector-icons";
 
 export const GRADE_CONFIG: Record<

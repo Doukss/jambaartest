@@ -9,21 +9,21 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
-import { useColors } from "@/src/theme/useTheme";
-import { useThemeStore } from "@/src/store/theme.store";
-import { isNetworkError } from "@/src/utils/error.utils";
-import { NetworkErrorScreen } from "@/src/components/ui/NetworkErrorScreen";
-import { InfoRow } from "@/src/components/alerts/InfoRow";
-import { EtaModal } from "@/src/components/alerts/EtaModal";
+import { useColors } from "@/theme/useTheme";
+import { useThemeStore } from "@/store/theme.store";
+import { isNetworkError } from "@/utils/error.utils";
+import { NetworkErrorScreen } from "@/components/ui/NetworkErrorScreen";
+import { InfoRow } from "@/components/alerts/InfoRow";
+import { EtaModal } from "@/components/alerts/EtaModal";
 import {
   formatBloodType,
   formatServiceUnit,
   formatDistance,
   getTimeRemaining,
   formatRelative,
-} from "@/src/utils/format.utils";
-import { useAlertDetailScreen } from "@/src/hooks/useAlertDetailScreen";
-import { useAlertDetailStyles } from "@/src/styles/useAlertDetailStyles";
+} from "@/utils/format.utils";
+import { useAlertDetailScreen } from "@/hooks/useAlertDetailScreen";
+import { useAlertDetailStyles } from "@/styles/useAlertDetailStyles";
 
 export default function AlertDetailScreen() {
   const colors = useColors();

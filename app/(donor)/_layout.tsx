@@ -1,10 +1,10 @@
-import { View } from "react-native";
+﻿import { View } from "react-native";
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { InAppAlert } from "@/src/components/ui/InAppAlert";
-import { useDonorLayout } from "@/src/hooks/useDonorLayout";
-import { useTabStyles } from "@/src/hooks/useTabStyles";
-import { TABS, HIDDEN_TABS } from "@/src/constants/donorTabs.config";
+import { InAppAlert } from "@/components/ui/InAppAlert";
+import { useDonorLayout } from "@/hooks/useDonorLayout";
+import { useTabStyles } from "@/hooks/useTabStyles";
+import { TABS, HIDDEN_TABS } from "@/constants/donorTabs.config";
 
 export default function DonorLayout() {
   const { isAuthorized, inAppAlert, setInAppAlert, safeBottom, tabBarHeight } =

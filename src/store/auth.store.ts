@@ -1,8 +1,8 @@
-import { create } from "zustand";
-import { User } from "@/src/types/user.types";
+﻿import { create } from "zustand";
+import { User } from "@/types/user.types";
 import * as SecureStore from "expo-secure-store";
-import { tokenManager } from "@/src/utils/token.utils";
-import { registrationManager } from "@/src/utils/registration.utils";
+import { tokenManager } from "@/utils/token.utils";
+import { registrationManager } from "@/utils/registration.utils";
 
 const USER_KEY = "vitalink_user";
 

@@ -1,8 +1,8 @@
-import React from "react";
+﻿import React from "react";
 import { View, Animated } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
-import { useColors } from "@/src/theme/useTheme";
+import { useColors } from "@/theme/useTheme";
 
 export function HeroOrb({
   pulseAnim,

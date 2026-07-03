@@ -1,4 +1,4 @@
-import { useThemedStyles } from "@/src/theme/useTheme";
+﻿import { useThemedStyles } from "@/theme/useTheme";
 
 export function useEligibilityStyles() {
   const styles = useThemedStyles((c) => ({

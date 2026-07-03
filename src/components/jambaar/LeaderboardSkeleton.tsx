@@ -1,6 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import { View } from "react-native";
-import { useColors, useThemedStyles } from "@/src/theme/useTheme";
+import { useColors, useThemedStyles } from "@/theme/useTheme";
 
 export function LeaderboardSkeleton() {
   const colors = useColors(); // ← Autonome

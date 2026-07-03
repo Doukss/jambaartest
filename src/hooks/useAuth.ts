@@ -1,14 +1,14 @@
-import { useMutation } from "@tanstack/react-query";
+﻿import { useMutation } from "@tanstack/react-query";
 import { Href, useRouter } from "expo-router";
 import Toast from "react-native-toast-message";
-import { authApi } from "@/src/api/auth.api";
-import { useAuthStore } from "@/src/store/auth.store";
-import { tokenManager } from "@/src/utils/token.utils";
+import { authApi } from "@/api/auth.api";
+import { useAuthStore } from "@/store/auth.store";
+import { tokenManager } from "@/utils/token.utils";
 import {
   RegisterDonorPayload,
   VerifyOtpPayload,
 } from "../types/auth.types";
-import { registrationManager } from "@/src/utils/registration.utils";
+import { registrationManager } from "@/utils/registration.utils";
 
 // ─── Helper pour extraire le message d'erreur Axios ──────────
 const getErrorMessage = (err: any) =>

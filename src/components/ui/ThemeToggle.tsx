@@ -1,9 +1,9 @@
-import React from "react";
+﻿import React from "react";
 import { TouchableOpacity, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import * as Haptics from "expo-haptics";
-import { useThemeStore } from "@/src/store/theme.store";
-import { useColors } from "@/src/theme/useTheme";
+import { useThemeStore } from "@/store/theme.store";
+import { useColors } from "@/theme/useTheme";
 
 interface ThemeToggleProps {
   size?: number;

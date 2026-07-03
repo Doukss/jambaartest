@@ -1,4 +1,4 @@
-import { useThemedStyles } from "@/src/theme/useTheme";
+﻿import { useThemedStyles } from "@/theme/useTheme";
 import { useBottomTabBarHeight } from "../hooks/useTabBarHeight";
 
 export function useLeaderboardStyles() {

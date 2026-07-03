@@ -1,6 +1,6 @@
-import { QueryClient, MutationCache, QueryCache } from "@tanstack/react-query";
+﻿import { QueryClient, MutationCache, QueryCache } from "@tanstack/react-query";
 import Toast from "react-native-toast-message";
-import { isNetworkError, isAuthError } from "@/src/utils/error.utils";
+import { isNetworkError, isAuthError } from "@/utils/error.utils";
 
 // ─── Helper pour extraire le message d'une erreur Axios ──────
 const getErrorMessage = (err: unknown): string => {

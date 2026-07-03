@@ -1,5 +1,5 @@
-import * as SecureStore from "expo-secure-store";
-import { RegisterDonorFormValues } from "@/src/validators/auth.schema";
+﻿import * as SecureStore from "expo-secure-store";
+import { RegisterDonorFormValues } from "@/validators/auth.schema";
 
 const PENDING_DONOR_KEY = "vitalink_pending_donor";
 
